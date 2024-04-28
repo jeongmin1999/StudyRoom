@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="채팅 View"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:scrollbarFadeDuration="0"
+    android:scrollbarSize="15dp"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:scrollbars="vertical"
+    android:background="@drawable/rectangle"/>
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:layout_gravity="">
+    <EditText
+        android:id="@+id/edit"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요."/>
+    <Button
+        android:id="@+id/chat_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"/>
+    </LinearLayout>
+</LinearLayout>

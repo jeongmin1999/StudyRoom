@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_group"
+        android:icon="@drawable/group"
+        android:title="그룹찾기" />
+
+    <item
+        android:id="@+id/menu_my_group"
+        android:icon="@drawable/my_group"
+        android:title="내그룹" />
+
+    <item
+        android:id="@+id/menu_reservation"
+        android:icon="@drawable/reservation"
+        android:title="예약" />
+
+    <item
+        android:id="@+id/menu_my_reservation"
+        android:icon="@drawable/my_reservation"
+        android:title="예약확인" />
+
+</menu>

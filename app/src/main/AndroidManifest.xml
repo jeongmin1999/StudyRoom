@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.ac.yeonsung.ksj.ex1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="연성대학교 스터디룸"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex1"
+        >
+        <activity
+            android:name="Activity.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="google.com" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.MainActivity">
+
+        </activity>
+        <activity android:name="Activity.JoinActivity">
+
+        </activity>
+        <activity android:name="Activity.LoginActivity">
+
+        </activity>
+        <activity android:name="Activity.GroupView">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.Groupadd">
+
+        </activity>
+        <activity android:name="Activity.GroupUpdate">
+
+        </activity>
+        <activity android:name="Activity.ChatView">
+
+        </activity>
+        <activity android:name="Admin.AdminActivity">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.ReservationAdd">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Admin.ReservationCheckActivity">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.RoomAdd">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Admin.RoomManageView">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Admin.StudyRoomManageActivity">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.ReservationView">
+
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="Activity.ReservationUpdate">
+
+        </activity>
+
+    </application>
+
+</manifest>

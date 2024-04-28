@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="529dp"
+        android:orientation="vertical"
+        android:padding="10px"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="201dp">
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/user_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/user_PasswordCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/user_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/user_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="전화번호"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/join_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입" />
+
+        <Button
+            android:id="@+id/go_to_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인" />
+    </LinearLayout>
+</LinearLayout>

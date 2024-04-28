@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.GroupFragment"
+    android:orientation="vertical"
+    android:id="@+id/as">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 찾기"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Spinner
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/filter"
+            />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:commitIcon="@drawable/ic_baseline_search_24" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginBottom="5dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundTint="#FFFFFF"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="15dp"
+            android:scrollbars="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/group_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#F7F7FF"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_add_24"/>
+
+        </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ex1</string>
+    <string name="booking_btn">예약</string>
+    <string name="info_btn">정보</string>
+    <string-array name = "filter">
+        <item>최근</item>
+        <item>오래된</item>
+        <item>이름-오름차순</item>
+        <item>이름-내림차순</item>
+    </string-array>
+    <string-array name = "reservationfilter">
+        <item></item>
+        <item>오래된</item>
+        <item>이름-오름차순</item>
+        <item>이름-내림차순</item>
+    </string-array>
+</resources>
