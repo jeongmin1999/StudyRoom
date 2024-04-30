@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/jeongmin1999/StudyRoom/assets/102007881/808f9f9f-2a1c-40e5-ae66-a97a47f8fab5"  width="500" height="200"/>
+
+</p>
+
 <p>1.	스터디 그룹 만들기.</p>
 <p> 모든 일반 사용자는 본인의 목적에 맞는 스터디 그룹을 생성할 수 있다.</p>
 <p> 1-1.	그룹 찾기 항목에서 + 버튼을 이용해 스터디 그룹 생성 페이지로 이동한다.</p>
